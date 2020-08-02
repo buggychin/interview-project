@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>
+        國泰二階段試題—解答 - HackMD
+    </title>
+    <link rel="icon" type="image/png" href="https://hackmd.io/favicon.png">
+    <link rel="apple-touch-icon" href="https://hackmd.io/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" integrity="sha256-3iu9jgsy9TpTwXKb7bNQzqWekRX7pPK+2OLj3R922fo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css" integrity="sha256-QiWfLIsCT02Sdwkogf6YMiQlj4NE84MKkzEMkZnMGdg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css" integrity="sha256-vtR0hSWRc3Tb26iuN2oZHt3KRUomwTufNIf5/4oeCyg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/css/basic/emojify.min.css" integrity="sha256-UOrvMOsSDSrW6szVLe8ZDZezBxh5IoIfgTwdNDgTjiU=" crossorigin="anonymous" />
+    <style>
+        @charset "UTF-8";@import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i|Source+Code+Pro:300,400,500|Source+Sans+Pro:300,300i,400,400i,600,600i|Source+Serif+Pro&subset=latin-ext);.hljs{display:block;background:#fff;padding:.5em;color:#333;overflow-x:auto}.hljs-comment,.hljs-meta{color:#969896}.hljs-emphasis,.hljs-quote,.hljs-string,.hljs-strong,.hljs-template-variable,.hljs-variable{color:#df5000}.hljs-keyword,.hljs-selector-tag,.hljs-type{color:#a71d5d}.hljs-attribute,.hljs-bullet,.hljs-literal,.hljs-number,.hljs-symbol{color:#0086b3}.hljs-built_in,.hljs-builtin-name{color:#005cc5}.hljs-name,.hljs-section{color:#63a35c}.hljs-tag{color:#333}.hljs-attr,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-selector-pseudo,.hljs-title{color:#795da3}.hljs-addition{color:#55a532;background-color:#eaffea}.hljs-deletion{color:#bd2c00;background-color:#ffecec}.hljs-link{text-decoration:underline}.markdown-body{font-size:16px;line-height:1.5;word-wrap:break-word}.markdown-body:after,.markdown-body:before{display:table;content:""}.markdown-body:after{clear:both}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body .absent{color:#c00}.markdown-body .anchor{float:left;padding-right:4px;margin-left:-20px;line-height:1}.markdown-body .anchor:focus{outline:none}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-top:0;margin-bottom:16px}.markdown-body hr{height:.25em;padding:0;margin:24px 0;background-color:#e7e7e7;border:0}.markdown-body blockquote{font-size:16px;padding:0 1em;color:#777;border-left:.25em solid #ddd}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body kbd,.popover kbd{display:inline-block;padding:3px 5px;font-size:11px;line-height:10px;color:#555;vertical-align:middle;background-color:#fcfcfc;border:1px solid #ccc;border-bottom-color:#bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb}.markdown-body .loweralpha{list-style-type:lower-alpha}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{color:#000;vertical-align:middle;visibility:hidden}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{visibility:visible}.markdown-body h1 code,.markdown-body h1 tt,.markdown-body h2 code,.markdown-body h2 tt,.markdown-body h3 code,.markdown-body h3 tt,.markdown-body h4 code,.markdown-body h4 tt,.markdown-body h5 code,.markdown-body h5 tt,.markdown-body h6 code,.markdown-body h6 tt{font-size:inherit}.markdown-body h1{font-size:2em}.markdown-body h1,.markdown-body h2{padding-bottom:.3em;border-bottom:1px solid #eee}.markdown-body h2{font-size:1.5em}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{font-size:.85em;color:#777}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol.no-list,.markdown-body ul.no-list{padding:0;list-style-type:none}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-top:0;margin-bottom:0}.markdown-body li>p{margin-top:16px}.markdown-body li+li{padding-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}.markdown-body dl dd{padding:0 16px;margin-bottom:16px}.markdown-body table{display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}.markdown-body table th{font-weight:700}.markdown-body table td,.markdown-body table th{padding:6px 13px;border:1px solid #ddd}.markdown-body table tr{background-color:#fff;border-top:1px solid #ccc}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{max-width:100%;box-sizing:content-box;background-color:#fff}.markdown-body img[align=right]{padding-left:20px}.markdown-body img[align=left]{padding-right:20px}.markdown-body .emoji{max-width:none;vertical-align:text-top;background-color:transparent}.markdown-body span.frame{display:block;overflow:hidden}.markdown-body span.frame>span{display:block;float:left;width:auto;padding:7px;margin:13px 0 0;overflow:hidden;border:1px solid #ddd}.markdown-body span.frame span img{display:block;float:left}.markdown-body span.frame span span{display:block;padding:5px 0 0;clear:both;color:#333}.markdown-body span.align-center{display:block;overflow:hidden;clear:both}.markdown-body span.align-center>span{display:block;margin:13px auto 0;overflow:hidden;text-align:center}.markdown-body span.align-center span img{margin:0 auto;text-align:center}.markdown-body span.align-right{display:block;overflow:hidden;clear:both}.markdown-body span.align-right>span{display:block;margin:13px 0 0;overflow:hidden;text-align:right}.markdown-body span.align-right span img{margin:0;text-align:right}.markdown-body span.float-left{display:block;float:left;margin-right:13px;overflow:hidden}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{display:block;float:right;margin-left:13px;overflow:hidden}.markdown-body span.float-right>span{display:block;margin:13px auto 0;overflow:hidden;text-align:right}.markdown-body code,.markdown-body tt{padding:0;padding-top:.2em;padding-bottom:.2em;margin:0;font-size:85%;background-color:rgba(0,0,0,.04);border-radius:3px}.markdown-body code:after,.markdown-body code:before,.markdown-body tt:after,.markdown-body tt:before{letter-spacing:-.2em;content:"\00a0"}.markdown-body code br,.markdown-body tt br{display:none}.markdown-body del code{text-decoration:inherit}.markdown-body pre{word-wrap:normal}.markdown-body pre>code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:transparent;border:0}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f7f7f7;border-radius:3px}.markdown-body pre code,.markdown-body pre tt{display:inline;max-width:auto;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}.markdown-body pre code:after,.markdown-body pre code:before,.markdown-body pre tt:after,.markdown-body pre tt:before{content:normal}.markdown-body .csv-data td,.markdown-body .csv-data th{padding:5px;overflow:hidden;font-size:12px;line-height:1;text-align:left;white-space:nowrap}.markdown-body .csv-data .blob-line-num{padding:10px 8px 9px;text-align:right;background:#fff;border:0}.markdown-body .csv-data tr{border-top:0}.markdown-body .csv-data th{font-weight:700;background:#f8f8f8;border-top:0}.news .alert .markdown-body blockquote{padding:0 0 0 40px;border:0 none}.activity-tab .news .alert .commits,.activity-tab .news .markdown-body blockquote{padding-left:0}.task-list-item{list-style-type:none}.task-list-item label{font-weight:400}.task-list-item.enabled label{cursor:pointer}.task-list-item+.task-list-item{margin-top:3px}.task-list-item-checkbox{float:left;margin:.31em 0 .2em -1.3em!important;vertical-align:middle;cursor:default!important}.markdown-body{padding-top:40px;padding-bottom:40px;max-width:758px;overflow:visible!important;position:relative}.markdown-body .emoji{vertical-align:top}.markdown-body pre{border:inherit!important}.markdown-body code{color:inherit!important}.markdown-body pre code .wrapper{display:-moz-inline-flex;display:-ms-inline-flex;display:-o-inline-flex;display:inline-flex}.markdown-body pre code .gutter{float:left;overflow:hidden;-webkit-user-select:none;user-select:none}.markdown-body pre code .gutter.linenumber{text-align:right;position:relative;display:inline-block;cursor:default;z-index:4;padding:0 8px 0 0;min-width:20px;box-sizing:content-box;color:#afafaf!important;border-right:3px solid #6ce26c!important}.markdown-body pre code .gutter.linenumber>span:before{content:attr(data-linenumber)}.markdown-body pre code .code{float:left;margin:0 0 0 16px}.markdown-body .gist .line-numbers{border-left:none;border-top:none;border-bottom:none}.markdown-body .gist .line-data{border:none}.markdown-body .gist table{border-spacing:0;border-collapse:inherit!important}.markdown-body code[data-gist-id]{background:none;padding:0}.markdown-body code[data-gist-id]:after,.markdown-body code[data-gist-id]:before{content:""}.markdown-body code[data-gist-id] .blob-num{border:unset}.markdown-body code[data-gist-id] table{overflow:unset;margin-bottom:unset}.markdown-body code[data-gist-id] table tr{background:unset}.markdown-body[dir=rtl] pre{direction:ltr}.markdown-body[dir=rtl] code{direction:ltr;unicode-bidi:embed}.markdown-body .alert>p{margin-bottom:0}.markdown-body pre.abc,.markdown-body pre.flow-chart,.markdown-body pre.graphviz,.markdown-body pre.mermaid,.markdown-body pre.sequence-diagram,.markdown-body pre.vega{text-align:center;background-color:inherit;border-radius:0;white-space:inherit;overflow:visible}.markdown-body pre.abc>code,.markdown-body pre.flow-chart>code,.markdown-body pre.graphviz>code,.markdown-body pre.mermaid>code,.markdown-body pre.sequence-diagram>code,.markdown-body pre.vega>code{text-align:left}.markdown-body pre.abc>svg,.markdown-body pre.flow-chart>svg,.markdown-body pre.graphviz>svg,.markdown-body pre.mermaid>svg,.markdown-body pre.sequence-diagram>svg,.markdown-body pre.vega>svg{max-width:100%;height:100%}.markdown-body pre>code.wrap{white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word}.markdown-body .alert>p,.markdown-body .alert>ul{margin-bottom:0}.markdown-body summary{display:list-item}.markdown-body summary:focus{outline:none}.markdown-body details summary{cursor:pointer}.markdown-body details:not([open])>:not(summary){display:none}.markdown-body figure{margin:1em 40px}.markdown-body .mark,.markdown-body mark{background-color:#fff1a7}.vimeo,.youtube{cursor:pointer;display:table;text-align:center;background-position:50%;background-repeat:no-repeat;background-size:contain;background-color:#000;overflow:hidden}.vimeo,.youtube{position:relative;width:100%}.youtube{padding-bottom:56.25%}.vimeo img{width:100%;object-fit:contain;z-index:0}.youtube img{object-fit:cover;z-index:0}.vimeo iframe,.youtube iframe,.youtube img{width:100%;height:100%;position:absolute;top:0;left:0}.vimeo iframe,.youtube iframe{vertical-align:middle;z-index:1}.vimeo .icon,.youtube .icon{position:absolute;height:auto;width:auto;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;opacity:.3;transition:opacity .2s;z-index:0}.vimeo:hover .icon,.youtube:hover .icon{opacity:.6;transition:opacity .2s}.slideshare .inner,.speakerdeck .inner{position:relative;width:100%}.slideshare .inner iframe,.speakerdeck .inner iframe{position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:100%}.MJX_Assistive_MathML{display:none}.ui-infobar{position:relative;z-index:2;max-width:760px;margin:25px auto -25px;color:#777}.toc .invisable-node{list-style-type:none}.ui-toc{position:fixed;bottom:20px;z-index:998}.ui-toc.both-mode{margin-left:8px}.ui-toc.both-mode .ui-toc-label{height:40px;padding:10px 4px;border-top-left-radius:0;border-bottom-left-radius:0}.ui-toc-label{background-color:#e6e6e6;border:none;color:#868686;transition:opacity .2s}.ui-toc .open .ui-toc-label{opacity:1;color:#fff;transition:opacity .2s}.ui-toc-label:focus{opacity:.3;background-color:#ccc;color:#000}.ui-toc-label:hover{opacity:1;background-color:#ccc;transition:opacity .2s}.ui-toc-dropdown{margin-top:20px;margin-bottom:20px;padding-left:10px;padding-right:10px;max-width:45vw;width:25vw;max-height:70vh;overflow:auto;text-align:inherit}.ui-toc-dropdown>.toc{max-height:calc(70vh - 100px);overflow:auto}.ui-toc-dropdown[dir=rtl] .nav{padding-right:0;letter-spacing:.0029em}.ui-toc-dropdown a{overflow:hidden;text-overflow:ellipsis;white-space:pre}.ui-toc-dropdown .nav>li>a{display:block;padding:4px 20px;font-size:13px;font-weight:500;color:#767676}.ui-toc-dropdown .nav>li:first-child:last-child > ul,.ui-toc-dropdown .toc.expand ul{display:block}.ui-toc-dropdown .nav>li>a:focus,.ui-toc-dropdown .nav>li>a:hover{padding-left:19px;color:#000;text-decoration:none;background-color:transparent;border-left:1px solid #000}.ui-toc-dropdown[dir=rtl] .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav>li>a:hover{padding-right:19px;border-left:none;border-right:1px solid #000}.ui-toc-dropdown .nav>.active:focus>a,.ui-toc-dropdown .nav>.active:hover>a,.ui-toc-dropdown .nav>.active>a{padding-left:18px;font-weight:700;color:#000;background-color:transparent;border-left:2px solid #000}.ui-toc-dropdown[dir=rtl] .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav>.active>a{padding-right:18px;border-left:none;border-right:2px solid #000}.ui-toc-dropdown .nav .nav{display:none;padding-bottom:10px}.ui-toc-dropdown .nav>.active>ul{display:block}.ui-toc-dropdown .nav .nav>li>a{padding-top:1px;padding-bottom:1px;padding-left:30px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a{padding-right:30px}.ui-toc-dropdown .nav .nav>li>ul>li>a{padding-top:1px;padding-bottom:1px;padding-left:40px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a{padding-right:40px}.ui-toc-dropdown .nav .nav>li>a:focus,.ui-toc-dropdown .nav .nav>li>a:hover{padding-left:29px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:hover{padding-right:29px}.ui-toc-dropdown .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown .nav .nav>li>ul>li>a:hover{padding-left:39px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:hover{padding-right:39px}.ui-toc-dropdown .nav .nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>a{padding-left:28px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>a{padding-right:28px}.ui-toc-dropdown .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active>a{padding-left:38px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active>a{padding-right:38px}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif}html[lang^=ja] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html[lang=zh-tw] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}html .markdown-body[lang^=ja]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html .markdown-body[lang=zh-tw]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html .markdown-body[lang=zh-cn]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}html[lang^=ja] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ\ Ｐゴシック,sans-serif}html[lang=zh-tw] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html[lang=zh-cn] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}html .ui-toc-dropdown[lang^=ja]{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ\ Ｐゴシック,sans-serif}html .ui-toc-dropdown[lang=zh-tw]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html .ui-toc-dropdown[lang=zh-cn]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}.ui-affix-toc{position:fixed;top:0;max-width:15vw;max-height:70vh;overflow:auto}.back-to-top,.expand-toggle,.go-to-bottom{display:block;padding:4px 10px;margin-top:10px;margin-left:10px;font-size:12px;font-weight:500;color:#999}.back-to-top:focus,.back-to-top:hover,.expand-toggle:focus,.expand-toggle:hover,.go-to-bottom:focus,.go-to-bottom:hover{color:#563d7c;text-decoration:none}.back-to-top,.go-to-bottom{margin-top:0}.ui-user-icon{width:20px;height:20px;display:block;border-radius:3px;margin-top:2px;margin-bottom:2px;margin-right:5px;background-position:50%;background-repeat:no-repeat;background-size:cover}.ui-user-icon.small{width:18px;height:18px;display:inline-block;vertical-align:middle;margin:0 0 .2em}.ui-infobar>small>span{line-height:22px}.ui-infobar>small .dropdown{display:inline-block}.ui-infobar>small .dropdown a:focus,.ui-infobar>small .dropdown a:hover{text-decoration:none}.ui-published-note{color:#337ab7}.ui-published-note .fa{font-size:20px;vertical-align:top}.unselectable{-webkit-user-select:none;-o-user-select:none;user-select:none}.selectable{-webkit-user-select:text;-o-user-select:text;user-select:text}@media print{blockquote,div,img,pre,table{page-break-inside:avoid!important}a[href]:after{font-size:12px!important}}.markdown-body.slides{position:relative;z-index:1;color:#222}.markdown-body.slides:before{content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;background-color:currentColor;box-shadow:0 0 0 50vw}.markdown-body.slides section[data-markdown]{position:relative;margin-bottom:1.5em;background-color:#fff;text-align:center}.markdown-body.slides section[data-markdown] code{text-align:left}.markdown-body.slides section[data-markdown]:before{content:"";display:block;padding-bottom:56.23%}.markdown-body.slides section[data-markdown]>div:first-child{position:absolute;top:50%;left:1em;right:1em;transform:translateY(-50%);max-height:100%;overflow:hidden}.markdown-body.slides section[data-markdown]>ul{display:inline-block}.markdown-body.slides>section>section+section:after{content:"";position:absolute;top:-1.5em;right:1em;height:1.5em;border:3px solid #777}.site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,sans-serif}html[lang^=ja] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html[lang=zh-tw] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}body{font-smoothing:subpixel-antialiased!important;-webkit-font-smoothing:subpixel-antialiased!important;-moz-osx-font-smoothing:auto!important;text-shadow:0 0 1em transparent,1px 1px 1.2px rgba(0,0,0,.004);-webkit-overflow-scrolling:touch;letter-spacing:.025em}.focus,:focus{outline:none!important}::-moz-focus-inner{border:0!important}body{font-family:Source Sans Pro,Helvetica,Arial,sans-serif}html[lang^=ja] body{font-family:Source Sans Pro,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html[lang=zh-tw] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}abbr[data-original-title],abbr[title]{cursor:help}body.modal-open{overflow-y:auto;padding-right:0!important}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js" integrity="sha256-8E4Is26QH0bD52WoQpcB+R/tcWQtpzlCojrybUd7Mxo=" crossorigin="anonymous"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="doc" class="markdown-body container-fluid comment-inner comment-enabled" data-hard-breaks="true"><h1 id="國泰二階段試題—解答" data-id="國泰二階段試題—解答" style=""><a class="anchor hidden-xs" href="#國泰二階段試題—解答" title="國泰二階段試題—解答"><span class="octicon octicon-link"></span></a><span>國泰二階段試題—解答</span></h1><h2 id="執行步驟" data-id="執行步驟" style=""><a class="anchor hidden-xs" href="#執行步驟" title="執行步驟"><span class="octicon octicon-link"></span></a><span>執行步驟</span></h2><ol data-original-title="" title="">
+<li><span>cd to the repository folder</span></li>
+<li><span>Run follwing command to download the csv files</span></li>
+</ol><pre><code class="sh=bash hljs"><span class="hljs-meta">$</span><span class="bash">python data_crawler.py</span>
+</code></pre><ol start="3" data-original-title="" title="">
+<li><span>Run follwing command to create the result.csv</span></li>
+</ol><pre><code class="sh=bash hljs"><span class="hljs-meta">$</span><span class="bash">python filter_data.py</span>
+</code></pre><h3 id="題目與檔案對照" data-id="題目與檔案對照" style=""><a class="anchor hidden-xs" href="#題目與檔案對照" title="題目與檔案對照"><span class="octicon octicon-link"></span></a><span>題目與檔案對照</span></h3><p><img src="https://i.imgur.com/KFqUVDj.png" alt=""></p><table>
+<thead>
+<tr>
+<th><span>題號</span></th>
+<th style="text-align:left"><span>程式碼檔案</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span>Q1</span></td>
+<td style="text-align:left"><span>data_crawler.py</span></td>
+</tr>
+<tr>
+<td><span>Q2</span></td>
+<td style="text-align:left"><span>flask_api.py</span></td>
+</tr>
+<tr>
+<td><span>Q3</span></td>
+<td style="text-align:left"><span>data_loader.py</span></td>
+</tr>
+<tr>
+<td><span>Q4</span></td>
+<td style="text-align:left"><span>filter_data.py</span></td>
+</tr>
+<tr>
+<td><span>Q5</span></td>
+<td style="text-align:left"><span>filter_data.py</span></td>
+</tr>
+<tr>
+<td><span>Q6</span></td>
+<td style="text-align:left"><span>airflow_workflow.py</span></td>
+</tr>
+</tbody>
+</table><hr><h1 id="詳細解答" data-id="詳細解答" style=""><a class="anchor hidden-xs" href="#詳細解答" title="詳細解答"><span class="octicon octicon-link"></span></a><span>詳細解答</span></h1><h2 id="1-爬蟲" data-id="1-爬蟲" style=""><a class="anchor hidden-xs" href="#1-爬蟲" title="1-爬蟲"><span class="octicon octicon-link"></span></a><span>1. 爬蟲</span></h2><h3 id="1-使用Chrome開發者工具，尋找資料下載使用的API網址。" data-id="1-使用Chrome開發者工具，尋找資料下載使用的API網址。" style=""><a class="anchor hidden-xs" href="#1-使用Chrome開發者工具，尋找資料下載使用的API網址。" title="1-使用Chrome開發者工具，尋找資料下載使用的API網址。"><span class="octicon octicon-link"></span></a><span>1. 使用Chrome開發者工具，尋找資料下載使用的API網址。</span></h3><p><img src="https://i.imgur.com/vznBmI4.png" alt=""></p><p><span>在網站點擊下載按鈕後，Javscript分別會送出HEAD和GET兩個請求，之後將全部的檔案壓縮成zip檔案再下載下來，結果如下圖。</span><br>
+<img src="https://i.imgur.com/0CpeIO9.png" alt=""></p><h3 id="2-直接使用GET-request，搭配參數設定可以直接下載我們指定的CSV檔案，結果如下圖" data-id="2-直接使用GET-request，搭配參數設定可以直接下載我們指定的CSV檔案，結果如下圖" style=""><a class="anchor hidden-xs" href="#2-直接使用GET-request，搭配參數設定可以直接下載我們指定的CSV檔案，結果如下圖" title="2-直接使用GET-request，搭配參數設定可以直接下載我們指定的CSV檔案，結果如下圖"><span class="octicon octicon-link"></span></a><span>2. 直接使用GET request，搭配參數設定可以直接下載我們指定的CSV檔案，結果如下圖</span></h3><p><img src="https://i.imgur.com/xQ03mRu.png" alt=""></p><h3 id="3-API參數" data-id="3-API參數" style=""><a class="anchor hidden-xs" href="#3-API參數" title="3-API參數"><span class="octicon octicon-link"></span></a><span>3. API參數</span></h3><p><span>API url：</span><br>
+<a href="https://plvr.land.moi.gov.tw//DownloadSeason" target="_blank" rel="noopener"><span>https://plvr.land.moi.gov.tw//DownloadSeason</span></a><span>?</span><em><span>season</span></em><span>=</span><strong><span>106S2</span></strong><span>&amp;</span><em><span>fileName</span></em><span>=</span><strong><span>C_lvr_land_A.csv</span></strong></p><table>
+<thead>
+<tr>
+<th></th>
+<th><span>格式</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span>season</span></td>
+<td>&lt;year&gt;<span>S</span>&lt;season&gt;</td>
+</tr>
+<tr>
+<td><span>fileName</span></td>
+<td><span>&lt;city_code&gt;_lvr_land_&lt;land_type_code&gt;.csv</span></td>
+</tr>
+</tbody>
+</table><h4 id="City-Code" data-id="City-Code"><a class="anchor hidden-xs" href="#City-Code" title="City-Code"><span class="octicon octicon-link"></span></a><span>City Code</span></h4><table>
+<thead>
+<tr>
+<th><span>city</span></th>
+<th><span>city_code</span></th>
+<th><span>city</span></th>
+<th><span>city_code</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span>基隆市</span></td>
+<td><span>C</span></td>
+<td><span>雲林縣</span></td>
+<td><span>P</span></td>
+</tr>
+<tr>
+<td><span>臺北市</span></td>
+<td><span>A</span></td>
+<td><span>嘉義市</span></td>
+<td><span>I</span></td>
+</tr>
+<tr>
+<td><span>新北市</span></td>
+<td><span>F</span></td>
+<td><span>嘉義縣</span></td>
+<td><span>Q</span></td>
+</tr>
+<tr>
+<td><span>桃園市</span></td>
+<td><span>H</span></td>
+<td><span>臺南市</span></td>
+<td><span>D</span></td>
+</tr>
+<tr>
+<td><span>新竹市</span></td>
+<td><span>O</span></td>
+<td><span>高雄市</span></td>
+<td><span>E</span></td>
+</tr>
+<tr>
+<td><span>新竹縣</span></td>
+<td><span>J</span></td>
+<td><span>屏東縣</span></td>
+<td><span>T</span></td>
+</tr>
+<tr>
+<td><span>苗栗縣</span></td>
+<td><span>K</span></td>
+<td><span>宜蘭縣</span></td>
+<td><span>G</span></td>
+</tr>
+<tr>
+<td><span>臺中市</span></td>
+<td><span>B</span></td>
+<td><span>花蓮縣</span></td>
+<td><span>U</span></td>
+</tr>
+<tr>
+<td><span>南投縣</span></td>
+<td><span>M</span></td>
+<td><span>臺東縣</span></td>
+<td><span>V</span></td>
+</tr>
+<tr>
+<td><span>彰化縣</span></td>
+<td><span>N</span></td>
+<td><span>澎湖縣</span></td>
+<td><span>X</span></td>
+</tr>
+<tr>
+<td><span>金門縣</span></td>
+<td><span>W</span></td>
+<td><span>連江縣</span></td>
+<td><span>Z</span></td>
+</tr>
+</tbody>
+</table><h4 id="Land-Type-Code" data-id="Land-Type-Code"><a class="anchor hidden-xs" href="#Land-Type-Code" title="Land-Type-Code"><span class="octicon octicon-link"></span></a><span>Land Type Code</span></h4><table>
+<thead>
+<tr>
+<th><span>land_type</span></th>
+<th><span>land_type_code</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span>不動產買賣</span></td>
+<td><span>A</span></td>
+</tr>
+<tr>
+<td><span>預售屋買賣</span></td>
+<td><span>B</span></td>
+</tr>
+<tr>
+<td><span>不動產租賃</span></td>
+<td><span>C</span></td>
+</tr>
+</tbody>
+</table><h3 id="4-爬蟲程式撰寫" data-id="4-爬蟲程式撰寫" style=""><a class="anchor hidden-xs" href="#4-爬蟲程式撰寫" title="4-爬蟲程式撰寫"><span class="octicon octicon-link"></span></a><span>4. 爬蟲程式撰寫</span></h3><h4 id="定義爬蟲物件---open_data_crawler" data-id="定義爬蟲物件---open_data_crawler"><a class="anchor hidden-xs" href="#定義爬蟲物件---open_data_crawler" title="定義爬蟲物件---open_data_crawler"><span class="octicon octicon-link"></span></a><span>定義爬蟲物件 - open_data_crawler</span></h4><pre><code class="python hljs"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">open_data_crawler</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, max_threads=<span class="hljs-number">10</span>, storage_path=<span class="hljs-string">""</span>)</span>:</span>
+        <span class="hljs-comment"># dictonary for turning city name to city code</span>
+        self._city_code = {
+            <span class="hljs-string">"基隆市"</span>: <span class="hljs-string">"C"</span>, <span class="hljs-string">"雲林縣"</span>: <span class="hljs-string">"P"</span>, <span class="hljs-string">"臺北市"</span>: <span class="hljs-string">"A"</span>, <span class="hljs-string">"嘉義市"</span>: <span class="hljs-string">"I"</span>, <span class="hljs-string">"新北市"</span>: <span class="hljs-string">"F"</span>, <span class="hljs-string">"嘉義縣"</span>: <span class="hljs-string">"Q"</span>,
+            <span class="hljs-string">"桃園市"</span>: <span class="hljs-string">"H"</span>, <span class="hljs-string">"臺南市"</span>: <span class="hljs-string">"D"</span>, <span class="hljs-string">"新竹市"</span>: <span class="hljs-string">"O"</span>, <span class="hljs-string">"高雄市"</span>: <span class="hljs-string">"E"</span>, <span class="hljs-string">"新竹縣"</span>: <span class="hljs-string">"J"</span>, <span class="hljs-string">"屏東縣"</span>: <span class="hljs-string">"T"</span>,
+            <span class="hljs-string">"苗栗縣"</span>: <span class="hljs-string">"K"</span>, <span class="hljs-string">"宜蘭縣"</span>: <span class="hljs-string">"G"</span>, <span class="hljs-string">"臺中市"</span>: <span class="hljs-string">"B"</span>, <span class="hljs-string">"花蓮縣"</span>: <span class="hljs-string">"U"</span>, <span class="hljs-string">"南投縣"</span>: <span class="hljs-string">"M"</span>, <span class="hljs-string">"臺東縣"</span>: <span class="hljs-string">"V"</span>,
+            <span class="hljs-string">"彰化縣"</span>: <span class="hljs-string">"N"</span>, <span class="hljs-string">"澎湖縣"</span>: <span class="hljs-string">"X"</span>, <span class="hljs-string">"金門縣"</span>: <span class="hljs-string">"W"</span>, <span class="hljs-string">"連江縣"</span>: <span class="hljs-string">"Z"</span>
+        }
+        
+        <span class="hljs-comment"># dictonary for turning land type to land type code</span>
+        self._land_type_code = {
+            <span class="hljs-string">"不動產買賣"</span>: <span class="hljs-string">"A"</span>, <span class="hljs-string">"預售屋買賣"</span>: <span class="hljs-string">"B"</span>, <span class="hljs-string">"不動產租賃"</span>: <span class="hljs-string">"C"</span>
+        }
+        
+        <span class="hljs-comment"># specifiy the path to store files</span>
+        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> storage_path:
+            self._storage_path = os.path.join(os.getcwd(), <span class="hljs-string">"open_data"</span>)
+        <span class="hljs-keyword">else</span>:
+            self._storage_path = storage_path
+        
+        self._max_threads = max_threads <span class="hljs-comment"># maximum number of threads allowed</span>
+        self._queue = Queue()
+</code></pre><p><strong><span>參數：</span></strong><br>
+<em><strong><span>maxthreads:</span></strong></em><span> 最多同時有幾個thread進行爬蟲，默認為10</span><br>
+<em><strong><span>storage_path:</span></strong></em><span> 檔案儲存路徑，默認為當前目錄下的open_data文件夾</span></p><h4 id="下載csv檔案" data-id="下載csv檔案"><a class="anchor hidden-xs" href="#下載csv檔案" title="下載csv檔案"><span class="octicon octicon-link"></span></a><span>下載csv檔案</span></h4><pre><code class="python hljs"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">download_csv</span><span class="hljs-params">(self, url, folder, filename)</span>:</span>
+    <span class="hljs-string">"""
+    Download csv file to the folder with the given filename
+    - url: file url
+    - folder: file will be saved in this folder, in order to classify files
+    - filename: name of the file
+    """</span>
+    <span class="hljs-comment"># create folder if the folder not exist</span>
+    path = os.path.join(self._storage_path, folder)
+    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> os.path.exists(path): 
+        os.makedirs(path)
+
+    <span class="hljs-comment"># request for the file</span>
+    <span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+        <span class="hljs-keyword">try</span>:
+            response = requests.get(url, timeout=<span class="hljs-number">20</span>)
+            <span class="hljs-keyword">break</span>
+        <span class="hljs-keyword">except</span>:
+            print(<span class="hljs-string">"failed to download file:"</span>, filename)
+            print(<span class="hljs-string">"retry in 3 seconds"</span>)
+            time.sleep(<span class="hljs-number">3</span>)
+
+    <span class="hljs-comment"># save the response as a csv file</span>
+    file_path= os.path.join(path, filename)
+    <span class="hljs-keyword">with</span> open(file_path, <span class="hljs-string">'wb'</span>) <span class="hljs-keyword">as</span> f:
+        f.write(response.content)
+    print(folder, filename, <span class="hljs-string">"done"</span>)
+</code></pre><h4 id="使用多線程進行爬蟲" data-id="使用多線程進行爬蟲"><a class="anchor hidden-xs" href="#使用多線程進行爬蟲" title="使用多線程進行爬蟲"><span class="octicon octicon-link"></span></a><span>使用多線程進行爬蟲</span></h4><p><span>由於檔案很多，並且大小都不大，使用單線程的爬蟲速度太慢，因此我們使用python中的threading package來進行多線程的爬蟲</span></p><pre><code class="python hljs"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">crawl_target_data</span><span class="hljs-params">(self, targets, start_year, start_season, end_year, end_season)</span>:</span>
+        <span class="hljs-string">"""
+        Given cities, land_types and time interval, and download all the data between this interval
+        - targets： list of tuple, each element is a pair of (city, land_type)
+        - start_year: start year of the Republic Era
+        - start_season: start season in the start year
+        - end_year: end year of the Republic Era
+        - end_season: end season in the end year
+        """</span>
+        <span class="hljs-keyword">for</span> city, land_type <span class="hljs-keyword">in</span> targets:
+            city_code = self.get_city_code(city)
+            land_type_code = self.get_land_type_code(land_type)
+            
+            season = <span class="hljs-number">4</span> <span class="hljs-comment"># each year ends with season 4</span>
+            <span class="hljs-keyword">for</span> y <span class="hljs-keyword">in</span> range(start_year, end_year+<span class="hljs-number">1</span>):
+                <span class="hljs-keyword">if</span> y==end_year: season=end_season <span class="hljs-comment"># if y==end_year then season equals to end_season given</span>
+                
+                <span class="hljs-comment"># loop throught each year</span>
+                <span class="hljs-keyword">for</span> s <span class="hljs-keyword">in</span> range(start_season, season+<span class="hljs-number">1</span>):
+                    url = self.get_file_url(y, s, city, land_type)
+                    folder = <span class="hljs-string">"%s_%s"</span>%(y,s) <span class="hljs-comment"># use year and season to classify files</span>
+                    filename = <span class="hljs-string">"%s_lvr_land_%s.csv"</span>%(city_code, land_type_code)
+                    
+                    <span class="hljs-comment"># if the thread number exceed the limit, then wait until other thread is finished</span>
+                    <span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+                        <span class="hljs-keyword">if</span> self._queue.qsize()&lt;=self._max_threads:
+                            t = threading.Thread(target=self.download_csv, args=(url, folder, filename, ))
+                            t.start()
+                            self._queue.put(t) 
+                            <span class="hljs-keyword">break</span>
+                        <span class="hljs-keyword">else</span>:
+<span class="hljs-comment">#                             print("the queue is full")</span>
+                            time.sleep(<span class="hljs-number">2</span>)
+                start_season = <span class="hljs-number">1</span> <span class="hljs-comment"># each year starts with season 1 </span>
+        
+        <span class="hljs-comment"># wait until all the downloading tasks is finished</span>
+        <span class="hljs-keyword">while</span> <span class="hljs-keyword">not</span> self._queue.empty():
+            time.sleep(<span class="hljs-number">3</span>)
+        print(<span class="hljs-string">"爬蟲結束！"</span>)
+</code></pre><h4 id="爬取所有資料" data-id="爬取所有資料"><a class="anchor hidden-xs" href="#爬取所有資料" title="爬取所有資料"><span class="octicon octicon-link"></span></a><span>爬取所有資料</span></h4><pre><code class="python hljs">%%time
+opd_crawler = open_data_crawler(max_threads=<span class="hljs-number">20</span>)
+start_year = <span class="hljs-number">103</span>
+start_year_season = <span class="hljs-number">1</span>
+end_year = <span class="hljs-number">108</span>
+end_year_season = <span class="hljs-number">2</span>
+targets = [(<span class="hljs-string">"臺北市"</span>, <span class="hljs-string">"不動產買賣"</span>), (<span class="hljs-string">"新北市"</span>, <span class="hljs-string">"不動產買賣"</span>), (<span class="hljs-string">"高雄市"</span>, <span class="hljs-string">"不動產買賣"</span>), 
+            (<span class="hljs-string">"桃園市"</span>, <span class="hljs-string">"預售屋買賣"</span>), (<span class="hljs-string">"臺中市"</span>, <span class="hljs-string">"預售屋買賣"</span>)]
+
+opd_crawler.crawl_target_data(targets, start_year, start_year_season, end_year, end_year_season)
+</code></pre><h2 id="3-讀取檔案" data-id="3-讀取檔案" style=""><a class="anchor hidden-xs" href="#3-讀取檔案" title="3-讀取檔案"><span class="octicon octicon-link"></span></a><span>3. 讀取檔案</span></h2><h3 id="1-讀取全部檔案" data-id="1-讀取全部檔案" style=""><a class="anchor hidden-xs" href="#1-讀取全部檔案" title="1-讀取全部檔案"><span class="octicon octicon-link"></span></a><span>1. 讀取全部檔案</span></h3><p><span>比較使用 append 和 concat 兩種方法來合併csv檔，結果顯示pd.concat的讀取方式速度快非常多</span></p><h4 id="使用dfappend來合併dataframe" data-id="使用dfappend來合併dataframe"><a class="anchor hidden-xs" href="#使用dfappend來合併dataframe" title="使用dfappend來合併dataframe"><span class="octicon octicon-link"></span></a><span>使用df.append來合併dataframe</span></h4><pre><code class="python hljs">%%time
+trans_data = pd.DataFrame()
+<span class="hljs-keyword">for</span> path, folder, filenames <span class="hljs-keyword">in</span> os.walk(self._file_path):
+    <span class="hljs-keyword">for</span> file <span class="hljs-keyword">in</span> filenames:
+        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> file.endswith(<span class="hljs-string">".csv"</span>) <span class="hljs-keyword">or</span> <span class="hljs-string">"_lvr_land_"</span> <span class="hljs-keyword">not</span> <span class="hljs-keyword">in</span> file: <span class="hljs-keyword">continue</span> <span class="hljs-comment"># continue if file is not csv file</span>
+        file_path = os.path.join(path, file)
+        temp = pd.read_csv(file_path, encoding=<span class="hljs-string">"utf-8"</span>, skiprows=<span class="hljs-number">1</span>)
+
+        <span class="hljs-comment"># add df_name column to dataframe</span>
+        yead_and_season = os.path.basename(path)
+        city_and_type = file.replace(<span class="hljs-string">"_lvr_land"</span>, <span class="hljs-string">""</span>).replace(<span class="hljs-string">".csv"</span>, <span class="hljs-string">""</span>)
+        label = yead_and_season+<span class="hljs-string">"_"</span>+city_and_type
+        temp[<span class="hljs-string">"df_name"</span>] = label
+        trans_data=trans_data.append(temp)
+</code></pre><pre><code>Wall time: 2min 7s
+</code></pre><h4 id="使用pdconcat來合併dataframe" data-id="使用pdconcat來合併dataframe"><a class="anchor hidden-xs" href="#使用pdconcat來合併dataframe" title="使用pdconcat來合併dataframe"><span class="octicon octicon-link"></span></a><span>使用pd.concat來合併dataframe</span></h4><pre><code class="python hljs">%%time
+li = []
+<span class="hljs-keyword">for</span> path, folder, filenames <span class="hljs-keyword">in</span> os.walk(self._file_path):
+    <span class="hljs-keyword">for</span> file <span class="hljs-keyword">in</span> filenames:
+        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> file.endswith(<span class="hljs-string">".csv"</span>) <span class="hljs-keyword">or</span> <span class="hljs-string">"_lvr_land_"</span> <span class="hljs-keyword">not</span> <span class="hljs-keyword">in</span> file: <span class="hljs-keyword">continue</span> <span class="hljs-comment"># continue if file is not csv file</span>
+        file_path = os.path.join(path, file)
+        temp = pd.read_csv(file_path, encoding=<span class="hljs-string">"utf-8"</span>, skiprows=<span class="hljs-number">1</span>)
+
+        <span class="hljs-comment"># add df_name column to dataframe</span>
+        yead_and_season = os.path.basename(path)
+        city_and_type = file.replace(<span class="hljs-string">"_lvr_land"</span>, <span class="hljs-string">""</span>).replace(<span class="hljs-string">".csv"</span>, <span class="hljs-string">""</span>)
+        label = yead_and_season+<span class="hljs-string">"_"</span>+city_and_type
+        temp[<span class="hljs-string">"df_name"</span>] = label
+
+        li.append(temp)
+trans_data = pd.concat(li)
+</code></pre><pre><code>Wall time: 5.02 s
+</code></pre><h3 id="2-資料清理" data-id="2-資料清理" style=""><a class="anchor hidden-xs" href="#2-資料清理" title="2-資料清理"><span class="octicon octicon-link"></span></a><span>2. 資料清理</span></h3><p><span>total floor number欄位中的資料格式不一致，有的是透過阿拉伯數字來記載（如：5, 10等…），有的則透過中文字來記載（如：二十五層，十一層等…）</span><br>
+<span>透過下方的函式，我們可以將中文字轉成數字。</span></p><pre><code class="python hljs"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">chinese_to_number</span><span class="hljs-params">(self, pd_columns)</span>:</span>
+    <span class="hljs-string">"""
+    Loop through pd_columns, and turn all the chinese number string to number.
+    """</span>
+    chinese_num = {<span class="hljs-string">"一"</span>:<span class="hljs-number">1</span>, <span class="hljs-string">"二"</span>:<span class="hljs-number">2</span>, <span class="hljs-string">"三"</span>:<span class="hljs-number">3</span>, <span class="hljs-string">"四"</span>:<span class="hljs-number">4</span>, <span class="hljs-string">"五"</span>:<span class="hljs-number">5</span>, <span class="hljs-string">"六"</span>:<span class="hljs-number">6</span>, <span class="hljs-string">"七"</span>:<span class="hljs-number">7</span>, <span class="hljs-string">"八"</span>:<span class="hljs-number">8</span>, <span class="hljs-string">"九"</span>:<span class="hljs-number">9</span>, <span class="hljs-string">"十"</span>:<span class="hljs-number">10</span>}
+    col_values = []
+    reg_query = <span class="hljs-string">"^[%s]+層"</span> % <span class="hljs-string">"|"</span>.join(list(chinese_num.keys())) <span class="hljs-comment"># reg_query: "^[一|二|三|四|五|六|七|八|九|十]+層""</span>
+    <span class="hljs-keyword">for</span> floor_info <span class="hljs-keyword">in</span> pd_columns:
+        <span class="hljs-comment"># if floor_info is nan</span>
+        <span class="hljs-keyword">if</span> floor_info <span class="hljs-keyword">is</span> np.nan:
+            floor = floor_info
+        <span class="hljs-keyword">else</span>:
+            floor_info = str(floor_info)
+            <span class="hljs-comment"># if floor_info is in chinese word format, then turn the value to number format</span>
+            <span class="hljs-keyword">if</span> re.match(reg_query, floor_info):
+                tmp=<span class="hljs-number">1</span>
+                floor=<span class="hljs-number">0</span>
+                <span class="hljs-keyword">for</span> c <span class="hljs-keyword">in</span> floor_info:
+                    <span class="hljs-keyword">if</span> c <span class="hljs-keyword">in</span> chinese_num:
+                        val = chinese_num[c]
+                        <span class="hljs-keyword">if</span> val&lt;<span class="hljs-number">10</span>:
+                            tmp = val
+                        <span class="hljs-keyword">else</span>:
+                            floor+=tmp*val
+                            tmp = <span class="hljs-number">0</span>
+                <span class="hljs-keyword">else</span>:
+                    floor+=tmp
+            <span class="hljs-comment"># if floor_info equals to "地下層", then set the floor to -1</span>
+            <span class="hljs-keyword">elif</span> floor_info==<span class="hljs-string">"地下層"</span>:
+                floor = <span class="hljs-number">-1</span>
+            <span class="hljs-comment"># if the floor is already a number</span>
+            <span class="hljs-keyword">else</span>:
+                floor = int(floor_info)
+        col_values.append(floor)
+    <span class="hljs-keyword">return</span> col_values
+</code></pre><p><span>另外，也針對na欄位進行資料填補，規則如下：</span></p><table>
+<thead>
+<tr>
+<th><span>欄位類型</span></th>
+<th style="text-align:left"><span>欄位名稱</span></th>
+<th style="text-align:left"><span>處理方法</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span>類別</span></td>
+<td style="text-align:left"><span>The villages and towns urban district、 Whether there is manages the organization、 building present situation pattern – compartmented、 building state、 df_name、main building materials、main use、non-metropolis land use、shifting level、the berth category、the non-metropolis land use district、the use zoning or compiles and checks、transaction pen number、transaction sign</span></td>
+<td style="text-align:left"><span>以 ‘未知’ 填入nan</span></td>
+</tr>
+<tr>
+<td><span>字串</span></td>
+<td style="text-align:left"><span>land sector position building sector house number plate、serial number、the note</span></td>
+<td style="text-align:left"><span>以空字元 ‘’ 填入nan</span></td>
+</tr>
+<tr>
+<td><span>數值(默認為0)</span></td>
+<td style="text-align:left"><span>Building present situation pattern – room、 building present situation pattern – hall、 building present situation pattern – health</span></td>
+<td style="text-align:left"><span>以 0 填入nan</span></td>
+</tr>
+<tr>
+<td><span>數值(默認不為0)</span></td>
+<td style="text-align:left"><span>berth shifting total area square meter、 building shifting total area、land shifting total area square meter、the berth total price NTD、the unit price (NTD / square meter)、total floor number、total price NTD</span></td>
+<td style="text-align:left"><span>不做處理，保留nan</span></td>
+</tr>
+<tr>
+<td></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td><span>日期</span></td>
+<td style="text-align:left"><span>construction to complete the years、transaction year month and day</span></td>
+<td style="text-align:left"><span>不做處理，保留nan</span></td>
+</tr>
+<tr>
+<td></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+</tbody>
+</table><p><span>實作程式碼如下</span></p><pre><code class="python hljs"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">data_cleaning</span><span class="hljs-params">(self, trans_data)</span>:</span>
+    <span class="hljs-string">"""
+    Organize and format data
+    """</span>
+    <span class="hljs-comment"># define the value to fill nan according to different column</span>
+    category_col = [<span class="hljs-string">"The villages and towns urban district"</span>, <span class="hljs-string">"Whether there is manages the organization"</span>, <span class="hljs-string">"building present situation pattern - compartmented"</span>, <span class="hljs-string">"building state"</span>, <span class="hljs-string">"df_name"</span>, <span class="hljs-string">"main building materials"</span>, <span class="hljs-string">"main use"</span>, <span class="hljs-string">"non-metropolis land use"</span>, <span class="hljs-string">"shifting level"</span>, <span class="hljs-string">"the berth category"</span>, <span class="hljs-string">"the non-metropolis land use district"</span>, <span class="hljs-string">"the use zoning or compiles and checks"</span>, <span class="hljs-string">"transaction pen number"</span>, <span class="hljs-string">"transaction sign"</span>]
+    string_col = [<span class="hljs-string">"land sector position building sector house number plate"</span>, <span class="hljs-string">"serial number"</span>, <span class="hljs-string">"the note"</span>]
+    num_col_default_0 = [<span class="hljs-string">"Building present situation pattern - room"</span>, <span class="hljs-string">" building present situation pattern - hall"</span>, <span class="hljs-string">" building present situation pattern - health"</span>]
+    values = dict([(col, <span class="hljs-string">"未知"</span>) <span class="hljs-keyword">for</span> col <span class="hljs-keyword">in</span> category_col])
+    values = {**values, **dict([(col, <span class="hljs-string">""</span>) <span class="hljs-keyword">for</span> col <span class="hljs-keyword">in</span> string_col])}
+    values = {**values, **dict([(col, <span class="hljs-number">0</span>) <span class="hljs-keyword">for</span> col <span class="hljs-keyword">in</span> num_col_default_0])}
+
+    <span class="hljs-comment"># turn `total floor nuumber` into numeric format</span>
+    trans_data[<span class="hljs-string">"total floor number"</span>] = self.chinese_to_number(trans_data[<span class="hljs-string">"total floor number"</span>])
+    <span class="hljs-comment"># fill nan</span>
+    <span class="hljs-keyword">return</span> trans_data.fillna(values)
+</code></pre><h2 id="4-資料篩選" data-id="4-資料篩選" style=""><a class="anchor hidden-xs" href="#4-資料篩選" title="4-資料篩選"><span class="octicon octicon-link"></span></a><span>4. 資料篩選</span></h2><p><span>篩選條件：</span><br>
+<span>-【main use】為【住家用】</span><br>
+<span>-【building state】為【住宅大樓】</span><br>
+<span>-【total floor number】需【大於等於十三層】</span></p><pre><code class="python hljs">filter_data = trans_data[(trans_data[<span class="hljs-string">'main use'</span>]==<span class="hljs-string">"住家用"</span>) &amp; \
+    (trans_data[<span class="hljs-string">'building state'</span>]==<span class="hljs-string">"住宅大樓(11層含以上有電梯)"</span>) &amp; \
+    (trans_data[<span class="hljs-string">'total floor number'</span>]&gt;=<span class="hljs-number">13</span>)]
+filter_data
+</code></pre><h2 id="5-儲存結果成csv格式" data-id="5-儲存結果成csv格式" style=""><a class="anchor hidden-xs" href="#5-儲存結果成csv格式" title="5-儲存結果成csv格式"><span class="octicon octicon-link"></span></a><span>5. 儲存結果成csv格式</span></h2><pre><code class="python hljs">filter_data.to_csv(<span class="hljs-string">"result.csv"</span>, encoding=<span class="hljs-string">"utf-8-sig"</span>)
+</code></pre><h2 id="6部署到Airflow" data-id="6部署到Airflow" style=""><a class="anchor hidden-xs" href="#6部署到Airflow" title="6部署到Airflow"><span class="octicon octicon-link"></span></a><span>6.部署到Airflow</span></h2><p><span>將程式碼稍作整理為data_crawler.py以及data_loader.py兩個物件</span><br>
+<span>接著建立airflow_workflow.py檔案</span></p><pre><code class="python hljs">$ cat airflow_workflow.py
+
+<span class="hljs-keyword">from</span> datetime <span class="hljs-keyword">import</span> datetime
+<span class="hljs-keyword">from</span> airflow <span class="hljs-keyword">import</span> DAG
+<span class="hljs-keyword">from</span> airflow.operators.python_operator <span class="hljs-keyword">import</span> PythonOperator
+
+<span class="hljs-keyword">import</span> pandas <span class="hljs-keyword">as</span> pd
+<span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np
+<span class="hljs-keyword">import</span> re
+
+
+<span class="hljs-keyword">import</span> os, sys
+sys.path.append(os.getcwd())
+<span class="hljs-keyword">from</span> data_crawler <span class="hljs-keyword">import</span> open_data_crawler
+<span class="hljs-keyword">from</span> data_loader <span class="hljs-keyword">import</span> csv_data_loader
+
+file_path = os.path.join(os.getcwd(), <span class="hljs-string">"open_data"</span>)
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">crawl_data</span><span class="hljs-params">()</span>:</span>
+	<span class="hljs-string">"""
+	An airflow operator task, will download target csv files.
+	"""</span>
+	opd_crawler = open_data_crawler(max_threads=<span class="hljs-number">100</span>, storage_path=file_path)
+	start_year, start_season = <span class="hljs-number">103</span>, <span class="hljs-number">1</span>
+	end_year, end_season = <span class="hljs-number">108</span>, <span class="hljs-number">2</span>
+	target_data = [(<span class="hljs-string">"臺北市"</span>, <span class="hljs-string">"不動產買賣"</span>), (<span class="hljs-string">"新北市"</span>, <span class="hljs-string">"不動產買賣"</span>), (<span class="hljs-string">"高雄市"</span>, <span class="hljs-string">"不動產買賣"</span>), 
+				(<span class="hljs-string">"桃園市"</span>, <span class="hljs-string">"預售屋買賣"</span>), (<span class="hljs-string">"臺中市"</span>, <span class="hljs-string">"預售屋買賣"</span>)]
+
+	<span class="hljs-keyword">for</span> city, land_type <span class="hljs-keyword">in</span> target_data:
+		opd_crawler.crawl_target_data(city, land_type, start_year, start_season, end_year, end_season)
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">process_data</span><span class="hljs-params">()</span>:</span>
+	<span class="hljs-string">"""
+	An airflow operator task, will read in all csv files and output the filter result.
+	"""</span>
+	<span class="hljs-comment"># 1. read in all csv files in the path</span>
+	csv_loader = csv_data_loader(file_path=file_path)
+	trans_data = csv_loader.load_data()
+
+	<span class="hljs-comment"># 2. filter data</span>
+	filter_data =  trans_data[(trans_data[<span class="hljs-string">'main use'</span>]==<span class="hljs-string">"住家用"</span>) &amp; (trans_data[<span class="hljs-string">'building state'</span>]==<span class="hljs-string">"住宅大樓(11層含以上有電梯)"</span>) \
+	&amp; (trans_data[<span class="hljs-string">'total floor number'</span>]&gt;=<span class="hljs-number">13</span>)]
+
+	<span class="hljs-comment"># 3. save filter result to a csv file</span>
+	filter_data.to_csv(os.path.join(file_path, <span class="hljs-string">"result.csv"</span>), encoding=<span class="hljs-string">"utf-8-sig"</span>)
+
+<span class="hljs-comment"># define a DAG</span>
+dag = DAG(<span class="hljs-string">'opendata_crawler'</span>, description=<span class="hljs-string">'crawler open data and process'</span>, \
+schedule_interval=<span class="hljs-string">'0 12 * * *'</span>, start_date=datetime(<span class="hljs-number">2020</span>, <span class="hljs-number">3</span>, <span class="hljs-number">20</span>), catchup=<span class="hljs-keyword">False</span>)
+
+<span class="hljs-comment"># define crawler operator</span>
+crawler_operator = PythonOperator(task_id=<span class="hljs-string">'crawl_data_task'</span>, \
+    python_callable=crawl_data, dag=dag)
+<span class="hljs-comment"># define data process operator</span>
+process_data_operator = PythonOperator(task_id=<span class="hljs-string">'process_data_task'</span>, \
+python_callable=process_data, dag=dag)
+
+<span class="hljs-comment"># define the sequence</span>
+crawler_operator&gt;&gt;process_data_operator
+
+</code></pre><h2 id="2-設計建立API" data-id="2-設計建立API" style=""><a class="anchor hidden-xs" href="#2-設計建立API" title="2-設計建立API"><span class="octicon octicon-link"></span></a><span>2. 設計/建立API</span></h2><h3 id="設計建立API" data-id="設計建立API" style=""><a class="anchor hidden-xs" href="#設計建立API" title="設計建立API"><span class="octicon octicon-link"></span></a><span>設計/建立API</span></h3><pre><code class="python hljs"><span class="hljs-meta">@app.route('/api/transactions', methods=['GET'])</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">transactions</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-keyword">if</span> request.method == <span class="hljs-string">'GET'</span>:
+        city = request.args.get(<span class="hljs-string">'city'</span>, default=<span class="hljs-keyword">None</span>, type=str)
+        village = request.args.get(<span class="hljs-string">'village'</span>, default=<span class="hljs-keyword">None</span>, type=str)
+        total_floor = request.args.get(<span class="hljs-string">'total_floor'</span>, default=<span class="hljs-keyword">None</span>, type=int)
+        building_state = request.args.get(<span class="hljs-string">'building_state'</span>, default=<span class="hljs-keyword">None</span>, type=str)
+
+        limit = request.args.get(<span class="hljs-string">'limit'</span>, default=<span class="hljs-number">20</span>, type=int)
+        offset = request.args.get(<span class="hljs-string">'offset'</span>, default=<span class="hljs-number">0</span>, type=int)
+</code></pre><p><span>設計過程：</span></p><ol>
+<li><span>在restful的風格下，api的URI代表著資源的位置（名詞），並且透過http的method來區分對資源的動作（GET、POST、DELETE…）</span></li>
+<li><span>這次的情境下，我們需要依照不同條件（參數）去查詢（動作）交易資料（資源）</span></li>
+<li><span>因此該API的規格如下：</span><br>
+<strong><span>URI:</span></strong><span> /api/transactions</span><br>
+<strong><span>HTTP METHOD:</span></strong><span> GET</span><br>
+<strong><span>參數:</span></strong>
+<ul>
+<li><strong><span>village：</span></strong><span> 鄉鎮市區名稱（string）</span></li>
+<li><strong><span>total_floor：</span></strong><span> 總樓層數（int）</span></li>
+<li><strong><span>building_state：</span></strong><span> 建物形態 （string）</span></li>
+<li><strong><span>limit：</span></strong><span> 每次回傳多少筆資料，default 20，maximum 100（int）</span></li>
+<li><strong><span>offset：</span></strong><span> 跳過前面幾筆資料，default 20（int）</span></li>
+</ul>
+</li>
+</ol><p><span>** 由於我們有60幾萬筆資料，如果沒有輸入任何條件的話，回傳的資料量會過於龐大。因此透過</span><strong><span>limit和offset</span></strong><span>來限制回傳資料的數量，避免一個request傳輸時間過長造成伺服器阻塞。</span></p><h3 id="資料schema" data-id="資料schema" style=""><a class="anchor hidden-xs" href="#資料schema" title="資料schema"><span class="octicon octicon-link"></span></a><span>資料schema</span></h3><ol>
+<li><span>篩選重要欄位，並對欄位進行重新命名</span></li>
+</ol><pre><code class="json hljs">rename_columns = <span class="token punctuation">{</span>
+	<span class="token property">"building present situation pattern - compartmented"</span><span class="token operator">:</span> <span class="token string">"compartmented"</span><span class="token punctuation">,</span>
+	<span class="token property">"Building present situation pattern - room"</span><span class="token operator">:</span> <span class="token string">"number_of_rooms"</span><span class="token punctuation">,</span>
+	<span class="token property">"building present situation pattern - hall"</span><span class="token operator">:</span> <span class="token string">"number_of_hall"</span><span class="token punctuation">,</span>
+	<span class="token property">"building present situation pattern - health"</span><span class="token operator">:</span> <span class="token string">"number_of_bathrooms"</span><span class="token punctuation">,</span>
+	<span class="token property">"building shifting total area"</span><span class="token operator">:</span> <span class="token string">"building_area"</span><span class="token punctuation">,</span>
+	<span class="token property">"building state"</span><span class="token operator">:</span> <span class="token string">"building_state"</span><span class="token punctuation">,</span>
+	<span class="token property">"shifting level"</span><span class="token operator">:</span> <span class="token string">"shifting_level"</span><span class="token punctuation">,</span>
+	<span class="token property">"Whether there is manages the organization"</span><span class="token operator">:</span> <span class="token string">"has_manage_org"</span><span class="token punctuation">,</span>
+	<span class="token property">"main building materials"</span><span class="token operator">:</span> <span class="token string">"building_materials"</span><span class="token punctuation">,</span>
+	<span class="token property">"main use"</span><span class="token operator">:</span> <span class="token string">"main_use"</span><span class="token punctuation">,</span>
+	<span class="token property">"construction to complete the years"</span><span class="token operator">:</span> <span class="token string">"construction_date"</span><span class="token punctuation">,</span>
+	<span class="token property">"land sector position building sector house number plate"</span><span class="token operator">:</span> <span class="token string">"address"</span><span class="token punctuation">,</span>
+	<span class="token property">"The villages and towns urban district"</span><span class="token operator">:</span> <span class="token string">"village"</span><span class="token punctuation">,</span>
+	<span class="token property">"land shifting total area square meter"</span><span class="token operator">:</span> <span class="token string">"land_area"</span><span class="token punctuation">,</span>
+	<span class="token property">"berth shifting total area square meter"</span><span class="token operator">:</span> <span class="token string">"berth_area"</span><span class="token punctuation">,</span>
+	<span class="token property">"the berth category"</span><span class="token operator">:</span> <span class="token string">"berth_type"</span><span class="token punctuation">,</span>
+	<span class="token property">"the berth total price NTD"</span><span class="token operator">:</span> <span class="token string">"berth_price"</span><span class="token punctuation">,</span>
+	<span class="token property">"the use zoning or compiles and checks"</span><span class="token operator">:</span> <span class="token string">"use_zoning"</span><span class="token punctuation">,</span>
+	<span class="token property">"total floor number"</span><span class="token operator">:</span> <span class="token string">"total_floor_number"</span><span class="token punctuation">,</span>
+	<span class="token property">"transaction pen number"</span><span class="token operator">:</span> <span class="token string">"transaction_pen_number"</span><span class="token punctuation">,</span>
+	<span class="token property">"transaction sign"</span><span class="token operator">:</span> <span class="token string">"transaction_sign"</span><span class="token punctuation">,</span>
+	<span class="token property">"transaction year month and day"</span><span class="token operator">:</span> <span class="token string">"transaction_date"</span><span class="token punctuation">,</span>
+	<span class="token property">"total price NTD"</span><span class="token operator">:</span> <span class="token string">"total_price"</span><span class="token punctuation">,</span>
+	<span class="token property">"the unit price (NTD / square meter)"</span><span class="token operator">:</span> <span class="token string">"unit_price"</span><span class="token punctuation">,</span>
+	<span class="token property">"the note"</span><span class="token operator">:</span> <span class="token string">"note"</span><span class="token punctuation">,</span>
+    <span class="token property">"df_name"</span><span class="token operator">:</span> <span class="token string">"df_name"</span>
+<span class="token punctuation">}</span>
+trans_data = trans_data.rename(columns=rename_columns<span class="token punctuation">)</span>
+trans_data = trans_data<span class="token punctuation">[</span>list(rename_columns.values(<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
+</code></pre><ol start="2">
+<li><span>布林欄位使用True、False來表示</span></li>
+</ol><pre><code class="python hljs">trans_data[<span class="hljs-string">"compartmented"</span>] = np.where(trans_data[<span class="hljs-string">'compartmented'</span>]==<span class="hljs-string">"有"</span>, <span class="hljs-keyword">True</span>, <span class="hljs-keyword">False</span>)
+trans_data[<span class="hljs-string">"has_manage_org"</span>] = np.where(trans_data[<span class="hljs-string">'has_manage_org'</span>]==<span class="hljs-string">"有"</span>, <span class="hljs-keyword">True</span>, <span class="hljs-keyword">False</span>)
+</code></pre><ol start="3">
+<li><span>回傳的的資料schema</span></li>
+</ol><pre><code class="json hljs"><span class="token punctuation">[</span>
+   <span class="token punctuation">{</span>
+      <span class="token property">"compartmented"</span><span class="token operator">:</span><span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token property">"number_of_rooms"</span><span class="token operator">:</span><span class="token number">3</span><span class="token punctuation">,</span>
+      <span class="token property">"number_of_hall"</span><span class="token operator">:</span><span class="token number">2</span><span class="token punctuation">,</span>
+      <span class="token property">"number_of_bathrooms"</span><span class="token operator">:</span><span class="token number">2</span><span class="token punctuation">,</span>
+      <span class="token property">"building_area"</span><span class="token operator">:</span><span class="token number">109.87</span><span class="token punctuation">,</span>
+      <span class="token property">"building_state"</span><span class="token operator">:</span><span class="token string">"住宅大樓(11層含以上有電梯)"</span><span class="token punctuation">,</span>
+      <span class="token property">"shifting_level"</span><span class="token operator">:</span><span class="token string">"十層"</span><span class="token punctuation">,</span>
+      <span class="token property">"has_manage_org"</span><span class="token operator">:</span><span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token property">"building_materials"</span><span class="token operator">:</span><span class="token string">"鋼筋混凝土造"</span><span class="token punctuation">,</span>
+      <span class="token property">"main_use"</span><span class="token operator">:</span><span class="token string">"住家用"</span><span class="token punctuation">,</span>
+      <span class="token property">"construction_date"</span><span class="token operator">:</span><span class="token number">710824</span><span class="token punctuation">,</span>
+      <span class="token property">"address"</span><span class="token operator">:</span><span class="token string">"臺北市中正區羅斯福路三段121~150號"</span><span class="token punctuation">,</span>
+      <span class="token property">"village"</span><span class="token operator">:</span><span class="token string">"中正區"</span><span class="token punctuation">,</span>
+      <span class="token property">"land_area"</span><span class="token operator">:</span><span class="token number">9.97</span><span class="token punctuation">,</span>
+      <span class="token property">"berth_area"</span><span class="token operator">:</span><span class="token number">0</span><span class="token punctuation">,</span>
+      <span class="token property">"berth_type"</span><span class="token operator">:</span><span class="token string">"未知"</span><span class="token punctuation">,</span>
+      <span class="token property">"berth_price"</span><span class="token operator">:</span><span class="token number">0</span><span class="token punctuation">,</span>
+      <span class="token property">"use_zoning"</span><span class="token operator">:</span><span class="token string">"商"</span><span class="token punctuation">,</span>
+      <span class="token property">"total_floor_number"</span><span class="token operator">:</span><span class="token number">12</span><span class="token punctuation">,</span>
+      <span class="token property">"transaction_pen_number"</span><span class="token operator">:</span><span class="token string">"土地2建物1車位0"</span><span class="token punctuation">,</span>
+      <span class="token property">"transaction_sign"</span><span class="token operator">:</span><span class="token string">"房地(土地+建物)"</span><span class="token punctuation">,</span>
+      <span class="token property">"transaction_date"</span><span class="token operator">:</span><span class="token number">1021007</span><span class="token punctuation">,</span>
+      <span class="token property">"total_price"</span><span class="token operator">:</span><span class="token number">15600000</span><span class="token punctuation">,</span>
+      <span class="token property">"unit_price"</span><span class="token operator">:</span><span class="token number">141986</span><span class="token punctuation">,</span>
+      <span class="token property">"note"</span><span class="token operator">:</span><span class="token string">"親友、員工或其他特殊關係間之交易。"</span><span class="token punctuation">,</span>
+      <span class="token property">"df_name"</span><span class="token operator">:</span><span class="token string">"103_1_A_A"</span>
+   <span class="token punctuation">}</span><span class="token punctuation">,</span>
+ ...
+<span class="token punctuation">]</span>
+</code></pre></div>
+    <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
+        <div class="pull-right dropdown">
+            <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
+                <div class="toc"><ul class="nav">
+<li class=""><a href="#國泰二階段試題—解答" title="國泰二階段試題—解答">國泰二階段試題—解答</a><ul class="nav">
+<li class=""><a href="#執行步驟" title="執行步驟">執行步驟</a><ul class="nav">
+<li><a href="#題目與檔案對照" title="題目與檔案對照">題目與檔案對照</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#詳細解答" title="詳細解答">詳細解答</a><ul class="nav">
+<li><a href="#1-爬蟲" title="1. 爬蟲">1. 爬蟲</a><ul class="nav">
+<li><a href="#1-使用Chrome開發者工具，尋找資料下載使用的API網址。" title="1. 使用Chrome開發者工具，尋找資料下載使用的API網址。">1. 使用Chrome開發者工具，尋找資料下載使用的API網址。</a></li>
+<li><a href="#2-直接使用GET-request，搭配參數設定可以直接下載我們指定的CSV檔案，結果如下圖" title="2. 直接使用GET request，搭配參數設定可以直接下載我們指定的CSV檔案，結果如下圖">2. 直接使用GET request，搭配參數設定可以直接下載我們指定的CSV檔案，結果如下圖</a></li>
+<li><a href="#3-API參數" title="3. API參數">3. API參數</a></li>
+<li><a href="#4-爬蟲程式撰寫" title="4. 爬蟲程式撰寫">4. 爬蟲程式撰寫</a></li>
+</ul>
+</li>
+<li><a href="#3-讀取檔案" title="3. 讀取檔案">3. 讀取檔案</a><ul class="nav">
+<li><a href="#1-讀取全部檔案" title="1. 讀取全部檔案">1. 讀取全部檔案</a></li>
+<li><a href="#2-資料清理" title="2. 資料清理">2. 資料清理</a></li>
+</ul>
+</li>
+<li><a href="#4-資料篩選" title="4. 資料篩選">4. 資料篩選</a></li>
+<li><a href="#5-儲存結果成csv格式" title="5. 儲存結果成csv格式">5. 儲存結果成csv格式</a></li>
+<li><a href="#6部署到Airflow" title="6.部署到Airflow">6.部署到Airflow</a></li>
+<li><a href="#2-設計建立API" title="2. 設計/建立API">2. 設計/建立API</a><ul class="nav">
+<li><a href="#設計建立API" title="設計/建立API">設計/建立API</a></li>
+<li><a href="#資料schema" title="資料schema">資料schema</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">全部展開</a><a class="back-to-top" href="#">回到頂部</a><a class="go-to-bottom" href="#">移至底部</a></div>
+            </ul>
+        </div>
+    </div>
+    <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;" null null>
+        <div class="toc"><ul class="nav">
+<li class=""><a href="#國泰二階段試題—解答" title="國泰二階段試題—解答">國泰二階段試題—解答</a><ul class="nav">
+<li class=""><a href="#執行步驟" title="執行步驟">執行步驟</a><ul class="nav">
+<li><a href="#題目與檔案對照" title="題目與檔案對照">題目與檔案對照</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#詳細解答" title="詳細解答">詳細解答</a><ul class="nav">
+<li><a href="#1-爬蟲" title="1. 爬蟲">1. 爬蟲</a><ul class="nav">
+<li><a href="#1-使用Chrome開發者工具，尋找資料下載使用的API網址。" title="1. 使用Chrome開發者工具，尋找資料下載使用的API網址。">1. 使用Chrome開發者工具，尋找資料下載使用的API網址。</a></li>
+<li><a href="#2-直接使用GET-request，搭配參數設定可以直接下載我們指定的CSV檔案，結果如下圖" title="2. 直接使用GET request，搭配參數設定可以直接下載我們指定的CSV檔案，結果如下圖">2. 直接使用GET request，搭配參數設定可以直接下載我們指定的CSV檔案，結果如下圖</a></li>
+<li><a href="#3-API參數" title="3. API參數">3. API參數</a></li>
+<li><a href="#4-爬蟲程式撰寫" title="4. 爬蟲程式撰寫">4. 爬蟲程式撰寫</a></li>
+</ul>
+</li>
+<li><a href="#3-讀取檔案" title="3. 讀取檔案">3. 讀取檔案</a><ul class="nav">
+<li><a href="#1-讀取全部檔案" title="1. 讀取全部檔案">1. 讀取全部檔案</a></li>
+<li><a href="#2-資料清理" title="2. 資料清理">2. 資料清理</a></li>
+</ul>
+</li>
+<li><a href="#4-資料篩選" title="4. 資料篩選">4. 資料篩選</a></li>
+<li><a href="#5-儲存結果成csv格式" title="5. 儲存結果成csv格式">5. 儲存結果成csv格式</a></li>
+<li><a href="#6部署到Airflow" title="6.部署到Airflow">6.部署到Airflow</a></li>
+<li><a href="#2-設計建立API" title="2. 設計/建立API">2. 設計/建立API</a><ul class="nav">
+<li><a href="#設計建立API" title="設計/建立API">設計/建立API</a></li>
+<li><a href="#資料schema" title="資料schema">資料schema</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">全部展開</a><a class="back-to-top" href="#">回到頂部</a><a class="go-to-bottom" href="#">移至底部</a></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.6.0/gist-embed.min.js" integrity="sha256-KyF2D6xPIJUW5sUDSs93vWyZm+1RzIpKCexxElmxl8g=" crossorigin="anonymous" defer></script>
+    <script>
+        var markdown = $(".markdown-body");
+        //smooth all hash trigger scrolling
+        function smoothHashScroll() {
+            var hashElements = $("a[href^='#']").toArray();
+            for (var i = 0; i < hashElements.length; i++) {
+                var element = hashElements[i];
+                var $element = $(element);
+                var hash = element.hash;
+                if (hash) {
+                    $element.on('click', function (e) {
+                        // store hash
+                        var hash = this.hash;
+                        if ($(hash).length <= 0) return;
+                        // prevent default anchor click behavior
+                        e.preventDefault();
+                        // animate
+                        $('body, html').stop(true, true).animate({
+                            scrollTop: $(hash).offset().top
+                        }, 100, "linear", function () {
+                            // when done, add hash to url
+                            // (default click behaviour)
+                            window.location.hash = hash;
+                        });
+                    });
+                }
+            }
+        }
+
+        smoothHashScroll();
+        var toc = $('.ui-toc');
+        var tocAffix = $('.ui-affix-toc');
+        var tocDropdown = $('.ui-toc-dropdown');
+        //toc
+        tocDropdown.click(function (e) {
+            e.stopPropagation();
+        });
+
+        var enoughForAffixToc = true;
+
+        function generateScrollspy() {
+            $(document.body).scrollspy({
+                target: ''
+            });
+            $(document.body).scrollspy('refresh');
+            if (enoughForAffixToc) {
+                toc.hide();
+                tocAffix.show();
+            } else {
+                tocAffix.hide();
+                toc.show();
+            }
+            $(document.body).scroll();
+        }
+
+        function windowResize() {
+            //toc right
+            var paddingRight = parseFloat(markdown.css('padding-right'));
+            var right = ($(window).width() - (markdown.offset().left + markdown.outerWidth() - paddingRight));
+            toc.css('right', right + 'px');
+            //affix toc left
+            var newbool;
+            var rightMargin = (markdown.parent().outerWidth() - markdown.outerWidth()) / 2;
+            //for ipad or wider device
+            if (rightMargin >= 133) {
+                newbool = true;
+                var affixLeftMargin = (tocAffix.outerWidth() - tocAffix.width()) / 2;
+                var left = markdown.offset().left + markdown.outerWidth() - affixLeftMargin;
+                tocAffix.css('left', left + 'px');
+            } else {
+                newbool = false;
+            }
+            if (newbool != enoughForAffixToc) {
+                enoughForAffixToc = newbool;
+                generateScrollspy();
+            }
+        }
+        $(window).resize(function () {
+            windowResize();
+        });
+        $(document).ready(function () {
+            windowResize();
+            generateScrollspy();
+        });
+
+        //remove hash
+        function removeHash() {
+            window.location.hash = '';
+        }
+
+        var backtotop = $('.back-to-top');
+        var gotobottom = $('.go-to-bottom');
+
+        backtotop.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToTop)
+                scrollToTop();
+            removeHash();
+        });
+        gotobottom.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToBottom)
+                scrollToBottom();
+            removeHash();
+        });
+
+        var toggle = $('.expand-toggle');
+        var tocExpand = false;
+
+        checkExpandToggle();
+        toggle.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            tocExpand = !tocExpand;
+            checkExpandToggle();
+        })
+
+        function checkExpandToggle () {
+            var toc = $('.ui-toc-dropdown .toc');
+            var toggle = $('.expand-toggle');
+            if (!tocExpand) {
+                toc.removeClass('expand');
+                toggle.text('Expand all');
+            } else {
+                toc.addClass('expand');
+                toggle.text('Collapse all');
+            }
+        }
+
+        function scrollToTop() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: 0
+            }, 100, "linear");
+        }
+
+        function scrollToBottom() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: $(document.body)[0].scrollHeight
+            }, 100, "linear");
+        }
+    </script>
+</body>
+
+</html>
